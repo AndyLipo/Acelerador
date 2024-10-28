@@ -7,12 +7,13 @@ const ConfirmPasswordInput = ({ value, onChange }) => {
 
   return (
     <div className="relative mt-4">
-      <p className="block font-medium text-gray-500 dark:text-gray-400 text-sm mb-1">
+      <p className="block font-medium text-black dark:text-gray-400 text-sm mb-1">
         Confirmar Contraseña
       </p>
       <InputField
         type="password"
         ariaLabel="Confirmar Contraseña"
+        placeholder="Confirmar Contraseña"
         value={value}
         onChange={onChange}
         {...register('confirmPassword', {

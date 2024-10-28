@@ -13,7 +13,7 @@ const EditCourseModal = ({ onClose, onEditCourse, courseData }) => {
   // Cargar los datos del curso cuando el modal se abre
   useEffect(() => {
     if (courseData) {
-      setNroItem(courseData.title || '');
+      setNroItem(courseData.nroItem || '');
       setCourseTeacher(courseData.teacher || '');
       setDescription(courseData.description || '');
       setStartDate(courseData.startDate || '');
@@ -25,7 +25,7 @@ const EditCourseModal = ({ onClose, onEditCourse, courseData }) => {
     e.preventDefault();
     onEditCourse({
       id: courseData.id, // Mantener el ID original del curso
-      title: nroItem,
+      nroItem: nroItem,
       teacher: courseTeacher,
       description,
       startDate,
@@ -39,8 +39,8 @@ const EditCourseModal = ({ onClose, onEditCourse, courseData }) => {
       <CourseForm
         onSubmit={handleSubmit}
         onCancel={onClose}
-        courseTitle={nroItem}
-        setCourseTitle={setNroItem}
+        nroItem={nroItem}           // Changed from courseTitle to nroItem
+        setNroItem={setNroItem}
         courseTeacher={courseTeacher}
         setCourseTeacher={setCourseTeacher}
         description={description}

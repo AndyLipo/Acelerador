@@ -6,14 +6,14 @@ import ButtonGroup from './ButtonGroup';
 import DateInputField from './DateInputField';
 import AcordionCourse from '../Course/AcordionCourse';
 
-const PersonalCourses = ({ courseTitle }) => {
-  return (
-    <div>
-      <h2 className="text-xl font-bold">Cursos Personales</h2>
-      {courseTitle && <AcordionCourse nroItem={courseTitle} />}
-    </div>
-  );
-};
+// const PersonalCourses = ({ courseTitle }) => {
+//   return (
+//     <div>
+//       <h2 className="text-xl font-bold">Cursos Personales</h2>
+//       {/* {courseTitle && <AcordionCourse nroItem={courseTitle} />} */}
+//     </div>
+//   );
+// };
 
 // CourseForm.jsx
 const CourseForm = ({ 
