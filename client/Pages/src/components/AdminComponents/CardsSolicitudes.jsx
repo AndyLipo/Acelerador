@@ -43,9 +43,9 @@ export const CardsSolicitudes = ({ tipo, darkMode }) => {
       <div className="flex items-center space-x-4">
         <figure>
           <img
-            src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-            alt="Movie"
-            className="w-20 h-20 sm:w-16 sm:h-16 adms:w-12 adms:h-12 rounded-lg admlg:w-28 admlg:h-28"
+          src="https://via.placeholder.com/300"           
+          alt="Placeholder Image" 
+          className="w-20 h-20 sm:w-16 sm:h-16 adms:w-12 adms:h-12 rounded-lg admlg:w-28 admlg:h-28"
           />
         </figure>
         <div className="flex justify-between w-full">

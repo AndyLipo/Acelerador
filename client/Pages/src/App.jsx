@@ -20,11 +20,9 @@ import { TableAcordionPersonalCourses } from './components/OngSide/OngComponents
 const App = () => {
   return (
     <AuthProvider>
-      {/* <Router> */}
         <Routes>
           {/* Ruta Principal */}
           <Route path="/" element={<Home />} />
-
           {/* Rutas del Navbar */}
           <Route path="/ong" element={<OngClient />} />
           <Route path="/empresa" element={<CompanyBtn />} />
@@ -39,7 +37,6 @@ const App = () => {
           {/* Redireccionar rutas no encontradas */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
-      {/* </Router> */}
     </AuthProvider>
   );
 };

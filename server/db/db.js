@@ -84,7 +84,7 @@ function useDBandRunQueries() {
             facebook_org VARCHAR (50) NOT NULL,
             twitter_org VARCHAR (50) NOT NULL,
             web_org VARCHAR (50) NOT NULL,
-            fechaCreacion_org DATETIME DEFAULT CURRENT_TIMESTAMP(),
+            Creacifechaon_org DATETIME DEFAULT CURRENT_TIMESTAMP(),
             tipoOrg_id INT NOT NULL,
             FOREIGN KEY (tipoOrg_id) REFERENCES tipoOrg (tipoOrg_id)
     )`;
@@ -94,11 +94,11 @@ function useDBandRunQueries() {
             CREATE TABLE IF NOT EXISTS cursos(
             curso_id INT AUTO_INCREMENT PRIMARY KEY,
             nombre_curso VARCHAR (50),
+            organizacion_id INT NOT NULL,
+            docente_curso VARCHAR(50) NOT NULL,
+            descripcion_curso VARCHAR(150),
             fechaInicio_curso DATE NOT NULL,
             fechaCierre_curso DATE NOT NULL,
-            descripcion_curso VARCHAR(150),
-            docente_curso VARCHAR(50) NOT NULL,
-            organizacion_id INT NOT NULL,
             FOREIGN KEY (organizacion_id) REFERENCES ongs (organizacion_id)
     )`;
 
